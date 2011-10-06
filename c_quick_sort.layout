@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="main.c" open="1" top="1" tabpos="1">
+		<Cursor position="970" topLine="25" />
+	</File>
+	<File name="my_quicksort.c" open="1" top="0" tabpos="3">
+		<Cursor position="467" topLine="129" />
+	</File>
+	<File name="my_quicksort.h" open="1" top="0" tabpos="2">
+		<Cursor position="114" topLine="0" />
+	</File>
+	<File name="other_quicksort.c" open="1" top="0" tabpos="6">
+		<Cursor position="775" topLine="10" />
+	</File>
+	<File name="other_quicksort.h" open="1" top="0" tabpos="7">
+		<Cursor position="196" topLine="0" />
+	</File>
+	<File name="sort_common.c" open="1" top="0" tabpos="9">
+		<Cursor position="339" topLine="1" />
+	</File>
+	<File name="sort_common.h" open="1" top="0" tabpos="8">
+		<Cursor position="156" topLine="0" />
+	</File>
+	<File name="stopwatch.c" open="1" top="0" tabpos="5">
+		<Cursor position="256" topLine="0" />
+	</File>
+	<File name="stopwatch.h" open="1" top="0" tabpos="4">
+		<Cursor position="172" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
