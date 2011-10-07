@@ -2,6 +2,7 @@ project:my_quick_sort
 description:make better and faster sort algorithm
 date:2011-10-06
 author:jackwong from lstc china
+hosting:https://github.com/softman11/my_quick_sort/
 
 update history:
 2011-10-7

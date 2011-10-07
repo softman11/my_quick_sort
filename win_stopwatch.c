@@ -17,12 +17,14 @@ void start_win_stopwatch()
       
 	if(!init_flag){init_win_stopwatch();init_flag=1;}
 	QueryPerformanceCounter(&beginticks);  
-}  
+}
+  
 void end_win_stopwatch()  
 {  
      
    QueryPerformanceCounter(&endticks);  
 }  
+
 double get_win_stopwatch_ms()  
 {  
     unsigned long long cost=(unsigned long long)(endticks.QuadPart-beginticks.QuadPart);  
