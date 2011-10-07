@@ -3,3 +3,8 @@ description:make better and faster sort algorithm
 date:2011-10-06
 author:jackwong from lstc china
 
+update history:
+2011-10-7
+========================================
+add win_stopwatch.h and win_stopwatch.c
+
