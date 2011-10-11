@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "my_quicksort.h"
-#include "win_stopwatch.h"
 #include "other_quicksort.h"
 #include "sort_common.h"
 
@@ -13,16 +12,13 @@ int list3[N];
 int main()
 {
 
-	double ms;
+	
     random_fill(0,N,4,list0,list1,list2,list3);
 
-    start_win_stopwatch();
-    quick_sort_0(list0,0,N-1);
-    end_win_stopwatch();
-    ms=get_win_stopwatch_ms();
-    print_result(list0,ms,get_recursion_count0(),"my quick_sort_0");
+    test_sort(list0,0,N-1,"my quick_sort_0",quick_sort_0,get_recursion_count0);
+	
 
-    start_win_stopwatch();
+    /*start_win_stopwatch();
     other_quick_sort_0(list1,0,N-1);
     end_win_stopwatch();
     ms=get_win_stopwatch_ms();
@@ -38,8 +34,8 @@ int main()
     clib_quick_sort(list3,0,N-1);
     end_win_stopwatch();
     ms=get_win_stopwatch_ms();
-    print_result(list3,ms,0,"other clib qsort");
-	scanf(&ms);
+    print_result(list3,ms,0,"other clib qsort");*/
+	
 
     return 0;
 
