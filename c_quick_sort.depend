@@ -35,3 +35,45 @@
 	<stdarg.h>
 	<time.h>
 
+1318315366 source:f:\mydaywork\git\github\my_quick_sort\main.c
+	<stdio.h>
+	<stdlib.h>
+	"my_quicksort.h"
+	"win_stopwatch.h"
+	"other_quicksort.h"
+	"sort_common.h"
+
+1318314176 f:\mydaywork\git\github\my_quick_sort\my_quicksort.h
+
+1318314176 f:\mydaywork\git\github\my_quick_sort\win_stopwatch.h
+
+1318314176 f:\mydaywork\git\github\my_quick_sort\other_quicksort.h
+
+1318316397 f:\mydaywork\git\github\my_quick_sort\sort_common.h
+
+1318314176 source:f:\mydaywork\git\github\my_quick_sort\my_quicksort.c
+	"my_quicksort.h"
+	"sort_common.h"
+
+1318314176 source:f:\mydaywork\git\github\my_quick_sort\other_quicksort.c
+	"sort_common.h"
+	<stdlib.h>
+
+1318315589 source:f:\mydaywork\git\github\my_quick_sort\sort_common.c
+	"sort_common.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<time.h>
+
+1318314176 source:f:\mydaywork\git\github\my_quick_sort\win_stopwatch.c
+	<windows.h>
+	"win_stopwatch.h"
+
+1318315148 source:f:\mydaywork\git\github\my_quick_sort\lin_stopwatch.c
+	"lin_stopwatch.h"
+
+1318315126 f:\mydaywork\git\github\my_quick_sort\lin_stopwatch.h
+	<sys/time.h>
+	<unistd.h>
+

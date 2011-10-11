@@ -1,4 +1,4 @@
-#include "stopwatch.h"
+#include "lin_stopwatch.h"
 long start_time=0;
 long end_time=0;
 void start_stopwatch()
