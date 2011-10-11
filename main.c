@@ -13,13 +13,13 @@ int list3[N];
 int main()
 {
 
-
+	double ms;
     random_fill(0,N,4,list0,list1,list2,list3);
 
     start_win_stopwatch();
     quick_sort_0(list0,0,N-1);
     end_win_stopwatch();
-    double ms=get_win_stopwatch_ms();
+    ms=get_win_stopwatch_ms();
     print_result(list0,ms,get_recursion_count0(),"my quick_sort_0");
 
     start_win_stopwatch();
@@ -39,6 +39,7 @@ int main()
     end_win_stopwatch();
     ms=get_win_stopwatch_ms();
     print_result(list3,ms,0,"other clib qsort");
+	scanf(&ms);
 
     return 0;
 
