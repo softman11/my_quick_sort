@@ -1,14 +1,13 @@
 
 #include "sort_common.h"
 #include <stdlib.h>
-int recursion_count0;
-int get_other_recursion_count0(){return recursion_count0;}
+
 void other_quick_sort_0(int *arr,int l,int r)
 {
      int i = l;
      int j = r;
      int key = arr[(i+j)/2];
-     recursion_count0++;
+     recursion_count++;
      while(i < j)
         {
             for(;(i < r)&&(arr[i] < key);i++);

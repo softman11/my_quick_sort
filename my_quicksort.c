@@ -2,12 +2,7 @@
 #include "sort_common.h"
 
 int temp_list[N];
-int recursion_count0=0;
-int recursion_count1=0;
-int recursion_count2=0;
-int get_recursion_count0(){return recursion_count0;}
-int get_recursion_count1(){return recursion_count1;}
-int get_recursion_count2(){return recursion_count2;}
+
 /*
 
 *
@@ -19,7 +14,7 @@ void quick_sort_0(int *ar,int left,int right)
     int el,er,key;
     el=er=(left+right)/2;
     key=ar[el];
-    recursion_count0++;
+    recursion_count++;
 
     while(1)
     {
@@ -95,7 +90,7 @@ void quick_sort_1(int *ar,int left,int right)
     //int key=ar[left+rand()%(right-left)];
     int key=ar[(left+right)/2];
     int t_max=right+1,t_min=left-1,t_equ=0;
-    recursion_count1++;
+    recursion_count++;
     //if(left>=right)return;
 
     for(; i<=right; i++)
@@ -133,7 +128,7 @@ void quick_sort_2(int*ar,int left,int right)
 
     int key=ar[left];
     int i=left+1,k=right;
-    recursion_count2++;
+    recursion_count++;
     for(; i<k; i++)
     {
         if(ar[i]>key)

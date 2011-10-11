@@ -15,13 +15,13 @@ int main()
 
     random_fill(0,N,4,list0,list1,list2,list3);
 
-    test_sort(list0,0,N-1,"my quick_sort_0",quick_sort_0,get_recursion_count0);
+    test_sort(list0,0,N-1,"my quick_sort_0",quick_sort_0);
 
-    test_sort(list1,0,N-1,"my quick_sort_1",quick_sort_1,get_recursion_count1);
+    test_sort(list1,0,N-1,"my quick_sort_1",quick_sort_1);
 
-    test_sort(list2,0,N-1,"other_quick_sort_0",other_quick_sort_0,get_other_recursion_count0);
+    test_sort(list2,0,N-1,"other_quick_sort_0",other_quick_sort_0);
 
-    test_sort(list3,0,N-1,"clib_quick_sort",clib_quick_sort,get_other_recursion_count0);
+    test_sort(list3,0,N-1,"clib_quick_sort",clib_quick_sort);
 
 
     /*start_win_stopwatch();

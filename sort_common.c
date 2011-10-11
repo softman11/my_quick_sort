@@ -43,10 +43,11 @@ void print_result(int* ar,double ms,int rcount,char *str)
     printf(" %s cost ms:%f recursion_count:%d\n",str,ms,rcount);
 }
 
-void test_sort(int *ar,int l,int r,char * title,void (*f)(int*,int,int),int(*gr)())
+void test_sort(int *ar,int l,int r,char * title,void (*f)(int*,int,int))
 {
+	recursion_count=0;
 	start_stopwatch();
     f(ar,l,r);
     end_stopwatch();
-    print_result(ar,get_stopwatch_ms(),gr(),title);
+    print_result(ar,get_stopwatch_ms(),recursion_count,title);
 }
