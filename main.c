@@ -12,11 +12,17 @@ int list3[N];
 int main()
 {
 
-	
+
     random_fill(0,N,4,list0,list1,list2,list3);
 
     test_sort(list0,0,N-1,"my quick_sort_0",quick_sort_0,get_recursion_count0);
-	
+
+    test_sort(list1,0,N-1,"my quick_sort_1",quick_sort_1,get_recursion_count1);
+
+    test_sort(list2,0,N-1,"other_quick_sort_0",other_quick_sort_0,get_other_recursion_count0);
+
+    test_sort(list3,0,N-1,"clib_quick_sort",clib_quick_sort,get_other_recursion_count0);
+
 
     /*start_win_stopwatch();
     other_quick_sort_0(list1,0,N-1);
@@ -35,7 +41,7 @@ int main()
     end_win_stopwatch();
     ms=get_win_stopwatch_ms();
     print_result(list3,ms,0,"other clib qsort");*/
-	
+
 
     return 0;
 

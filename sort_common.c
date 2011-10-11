@@ -1,5 +1,5 @@
 #include "sort_common.h"
-#include "win_stopwatch.h"
+#include "lin_stopwatch.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -45,8 +45,8 @@ void print_result(int* ar,double ms,int rcount,char *str)
 
 void test_sort(int *ar,int l,int r,char * title,void (*f)(int*,int,int),int(*gr)())
 {
-	start_win_stopwatch();
+	start_stopwatch();
     f(ar,l,r);
-    end_win_stopwatch();    
-    print_result(ar,get_win_stopwatch_ms(),gr(),title);
+    end_stopwatch();
+    print_result(ar,get_stopwatch_ms(),gr(),title);
 }
