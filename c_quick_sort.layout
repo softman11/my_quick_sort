@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
-	<ActiveTarget name="Debug" />
+	<ActiveTarget name="Release" />
 	<File name="lin_stopwatch.c" open="1" top="0" tabpos="2">
 		<Cursor position="246" topLine="0" />
 	</File>
