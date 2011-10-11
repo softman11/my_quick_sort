@@ -7,8 +7,8 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/c_quick_sort" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
+				<Option output="bin\Debug\c_quick_sort" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -16,8 +16,8 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/c_quick_sort" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
+				<Option output="bin\Release\c_quick_sort" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="lin_stopwatch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lin_stopwatch.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -46,10 +50,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="sort_common.h" />
-		<Unit filename="stopwatch.c">
+		<Unit filename="win_stopwatch.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="stopwatch.h" />
+		<Unit filename="win_stopwatch.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
