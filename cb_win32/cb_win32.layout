@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="..\sort_common.c" open="1" top="1" tabpos="3">
+		<Cursor position="114" topLine="0" />
+	</File>
+	<File name="..\sort_common.h" open="1" top="0" tabpos="2">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="..\win_main.c" open="1" top="0" tabpos="1">
+		<Cursor position="198" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>

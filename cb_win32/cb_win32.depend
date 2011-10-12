@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1318382228 source:f:\mydaywork\git\github\my_quick_sort\other_quicksort.c
+	"sort_common.h"
+	<stdlib.h>
+
+1318382228 f:\mydaywork\git\github\my_quick_sort\sort_common.h
+
+1318382574 source:f:\mydaywork\git\github\my_quick_sort\sort_common.c
+	"sort_common.h"
+	"win_stopwatch.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<time.h>
+
+1318314176 f:\mydaywork\git\github\my_quick_sort\win_stopwatch.h
+
+1318382434 source:f:\mydaywork\git\github\my_quick_sort\win_main.c
+	<stdio.h>
+	<stdlib.h>
+	"my_quicksort.h"
+	"other_quicksort.h"
+	"sort_common.h"
+
+1318382228 f:\mydaywork\git\github\my_quick_sort\my_quicksort.h
+
+1318382228 f:\mydaywork\git\github\my_quick_sort\other_quicksort.h
+
+1318314176 source:f:\mydaywork\git\github\my_quick_sort\win_stopwatch.c
+	<windows.h>
+	"win_stopwatch.h"
+
+1318382228 source:f:\mydaywork\git\github\my_quick_sort\my_quicksort.c
+	"my_quicksort.h"
+	"sort_common.h"
+
