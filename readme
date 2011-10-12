@@ -9,3 +9,15 @@ update history:
 ========================================
 add win_stopwatch.h and win_stopwatch.c
 
+2011-10-11
+========================================
+在linux下，cb编译中如果开了-std=c99编译选项，则会报告tomezone 结构体
+tz:/home/jackwong/git/github/my_quick_sort/lin_stopwatch.c|16|error: storage size of ‘tz’ isn’t known|
+关掉之后一切正常。可能ubuntu的time.h的语法不符合c99的规范导致的吧。
+
+cb默认采用执行控制台是:xterm -T $Title -e 显示效果和中文支持都不好，
+修改为：gnome-terminal -x 采用系统默认的控制台，效果不错
+
+经过测试ubuntu下的执行效率还是低于windowsxp.
+本快速排序测试中，ubuntu下最快是1600MS级，而windows下只需要900MS级别。同一个机器上测试的结果
+
