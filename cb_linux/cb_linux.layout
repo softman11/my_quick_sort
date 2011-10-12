@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="../lin_stopwatch.c" open="1" top="1" tabpos="2">
+		<Cursor position="359" topLine="0" />
+	</File>
+	<File name="../lin_stopwatch.h" open="1" top="0" tabpos="3">
+		<Cursor position="87" topLine="0" />
+	</File>
+	<File name="../linux_main.c" open="1" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
