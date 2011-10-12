@@ -11,7 +11,12 @@ void quick_sort_0(int *,int ,int);
 我的快速排序算法，主要牺牲了一倍的数组存储空间来换得效率的提升
 **/
 void quick_sort_1(int*,int,int);
-void quick_sort_2(int*ar,int left,int right);
+
+/**
+我的快速排序算法，结合了最快的快速排序算法和二进制基数排序算法
+相当于超快速的排序算法的我的实现
+**/
+void quick_sort_2(int*ar,int ,int,int);
 
 
 #endif // MY_QUICKSORT_H_INCLUDED

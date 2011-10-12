@@ -25,7 +25,7 @@ int main()
 
     test_sort(list3,0,N-1,"clib_quick_sort",clib_quick_sort);
 
-	test_sort1(list4,0,N-1,"other bq_sort",bq_sort);
+	test_sort1(list4,0,N-1,"my quick_sort_2",quick_sort_2);
 
 
     

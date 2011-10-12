@@ -1,7 +1,7 @@
 #ifndef SORT_COMMON_H_INCLUDED
 #define SORT_COMMON_H_INCLUDED
 
-#define N 40000000
+#define N 10000000
 long recursion_count;
 void swap(int*,int*);
 void random_fill(int low,int up,int ar_count,...);

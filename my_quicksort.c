@@ -126,30 +126,34 @@ void quick_sort_1(int *ar,int left,int right)
 
 }
 
-void quick_sort_2(int*ar,int left,int right)
+void quick_sort_2(int*ar,int l,int r,int k)
 {
 
-    int key=ar[left];
-    int i=left+1,k=right;
-    recursion_count++;
-    for(; i<k; i++)
-    {
-        if(ar[i]>key)
-        {
-            for(; k>i&&ar[k]>=key;k--);
-            if(k!=i)
-            {
-                swap(&ar[i],&ar[k]);
-            }
 
-        }
-    }
-
-    i=k-1;
-    swap(&ar[left],&ar[i]);
-
-    if(i-1>left)quick_sort_2(ar,left,i-1);
-    if(right>i+1)quick_sort_2(ar,i+1,right);
+	int i = l;
+	int j = r;	
+	recursion_count++;
+	while(i < j)
+	{
+		for(;(i < r)&&!(ar[i]&k);i++);
+		for(;(j > l)&&(ar[j]&k);j--);
+		if (i <= j)
+		{
+			if ( i != j)
+			{
+				swap(&ar[i],&ar[j]);
+			}
+			i++;
+			j--;
+		}
+	}
+	if(k>0)
+	{
+		if (i < r)
+			quick_sort_2(ar,i,r,k/2);
+		if (j > l)
+			quick_sort_2(ar,l,j,k/2);
+	}
 
 }
 

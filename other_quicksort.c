@@ -40,12 +40,15 @@ void clib_quick_sort(int *ar,int l,int r)
     qsort(ar+l,r-l+1,sizeof(int),int_compare);
 }
 
+
 void bq_sort(int *ar,int l,int r,int k)
 {
+	
 	int i,j;
 	i=l;
 	j=r;
 	recursion_count++;
+	
 	while(i<j)
 	{
 		while((ar[j]&k)&&(i<j))j--;
