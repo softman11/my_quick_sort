@@ -39,3 +39,29 @@ void clib_quick_sort(int *ar,int l,int r)
 {
     qsort(ar+l,r-l+1,sizeof(int),int_compare);
 }
+
+void bq_sort(int *ar,int l,int r,int k)
+{
+	int i,j;
+	i=l;
+	j=r;
+	recursion_count++;
+	while(i<j)
+	{
+		while((ar[j]&k)&&(i<j))j--;
+		while(((ar[i]&k)==0)&&(i<j))i++;
+		if(i<j)swap(&ar[i],&ar[j]);
+		else
+		{
+			if(ar[j]&k)i--;
+			else j++;
+			break;
+		}
+	}
+	if(k>1)
+	{
+		if(l<i)bq_sort(ar,l,i,k/2);
+		if(j<r)bq_sort(ar,j,r,k/2);
+
+	}
+}

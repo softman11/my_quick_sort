@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <time.h>
+
+
 void random_fill(int low,int up,int ar_count,...)
 {
     int i=0,key,j,*p_ar;
@@ -36,18 +38,27 @@ void swap(int *a,int *b)
     *b=t;
 }
 
-void print_result(int* ar,double ms,int rcount,char *str)
+void print_result(int* ar,double ms,long rcount,char *str)
 {
     if(correct(ar,N))printf("test ok!");
     else printf("test fail!");
-    printf(" %s cost ms:%f recursion_count:%d\n",str,ms,rcount);
+    printf(" %s cost ms:%f recursion_count:%ld\n",str,ms,rcount);
 }
 
 void test_sort(int *ar,int l,int r,char * title,void (*f)(int*,int,int))
 {
-	recursion_count=0;
+	recursion_count=0L;
 	start_win_stopwatch();
     f(ar,l,r);
+    end_win_stopwatch();
+    print_result(ar,get_win_stopwatch_ms(),recursion_count,title);
+}
+
+void test_sort1(int *ar,int l,int r,char * title,void (*f)(int*,int,int,int))
+{
+	recursion_count=0L;
+	start_win_stopwatch();
+    f(ar,l,r,0x40000000);
     end_win_stopwatch();
     print_result(ar,get_win_stopwatch_ms(),recursion_count,title);
 }

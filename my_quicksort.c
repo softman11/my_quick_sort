@@ -1,12 +1,13 @@
 #include "my_quicksort.h"
 #include "sort_common.h"
-
+#include <stdio.h>
 int temp_list[N];
 
 /*
 
 *
 */
+
 void quick_sort_0(int *ar,int left,int right)
 {
 
@@ -15,6 +16,8 @@ void quick_sort_0(int *ar,int left,int right)
     el=er=(left+right)/2;
     key=ar[el];
     recursion_count++;
+	
+	
 
     while(1)
     {
