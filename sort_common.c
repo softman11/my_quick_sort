@@ -42,7 +42,7 @@ void print_result(int* ar,double ms,long rcount,char *str)
 {
     if(correct(ar,N))printf("test ok!");
     else printf("test fail!");
-    printf(" %s cost ms:%f recursion_count:%ld\n",str,ms,rcount);
+    printf(" cost ms:%f %s recursion_count:%ld\n",ms,str,rcount);
 }
 
 void test_sort(int *ar,int l,int r,char * title,void (*f)(int*,int,int))

@@ -7,22 +7,22 @@
 	<File name="../lin_stopwatch.h" open="1" top="0" tabpos="3">
 		<Cursor position="87" topLine="0" />
 	</File>
-	<File name="../linux_main.c" open="1" top="1" tabpos="1">
-		<Cursor position="322" topLine="9" />
+	<File name="../linux_main.c" open="1" top="0" tabpos="1">
+		<Cursor position="649" topLine="12" />
 	</File>
-	<File name="../my_quicksort.c" open="1" top="0" tabpos="6">
-		<Cursor position="3357" topLine="164" />
+	<File name="../my_quicksort.c" open="1" top="1" tabpos="6">
+		<Cursor position="1334" topLine="81" />
 	</File>
 	<File name="../my_quicksort.h" open="1" top="0" tabpos="4">
-		<Cursor position="521" topLine="0" />
+		<Cursor position="331" topLine="0" />
 	</File>
 	<File name="../other_quicksort.c" open="1" top="0" tabpos="8">
-		<Cursor position="916" topLine="29" />
+		<Cursor position="916" topLine="47" />
 	</File>
 	<File name="../sort_common.c" open="1" top="0" tabpos="7">
-		<Cursor position="1226" topLine="41" />
+		<Cursor position="750" topLine="29" />
 	</File>
 	<File name="../sort_common.h" open="1" top="0" tabpos="5">
-		<Cursor position="80" topLine="0" />
+		<Cursor position="81" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

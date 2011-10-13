@@ -21,7 +21,7 @@ void quick_sort_0(int *ar,int left,int right)
 
     while(1)
     {
-        while(i<=el-1)
+        while(i<el)
         {
             if(ar[i]>key)break;
             if(ar[i]==key)
@@ -29,14 +29,14 @@ void quick_sort_0(int *ar,int left,int right)
                 swap(&ar[i],&ar[el-1]);
                 el--;
 
-                continue;
+                // continue;
             }
             else
             {
                 i++;
             }
         }
-        while(k>=er+1)
+        while(k>er)
         {
             if(ar[k]<key)break;
             if(ar[k]==key)
@@ -46,7 +46,7 @@ void quick_sort_0(int *ar,int left,int right)
 
                 er++;
 
-                continue;
+                //continue;
             }
             else
             {
@@ -79,10 +79,10 @@ void quick_sort_0(int *ar,int left,int right)
         }
 
     }
-    if(el-1==left+1)if(ar[left]>ar[el-1])swap(&ar[left],&ar[el-1]);
-    if(el-1>left+1)quick_sort_0(ar,left,el-1);
-    if(er+2==right)if(ar[er+1]>ar[right])swap(&ar[er+1],&ar[right]);
-    if(right>er+2)quick_sort_0(ar,er+1,right);
+
+    if(el-1>left)quick_sort_0(ar,left,el-1);
+
+    if(right>er+1)quick_sort_0(ar,er+1,right);
 
 }
 
@@ -153,7 +153,7 @@ void quick_sort_2(int*ar,int l,int r,int k)
             }
         }
     }
-    if((k/2)!=0x00)
+    if(k>1)
     {
 
 
