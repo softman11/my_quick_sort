@@ -16,8 +16,8 @@ void quick_sort_0(int *ar,int left,int right)
     el=er=(left+right)/2;
     key=ar[el];
     recursion_count++;
-	
-	
+
+
 
     while(1)
     {
@@ -130,30 +130,58 @@ void quick_sort_2(int*ar,int l,int r,int k)
 {
 
 
-	int i = l;
-	int j = r;	
-	recursion_count++;
-	while(i < j)
-	{
-		for(;(i < r)&&!(ar[i]&k);i++);
-		for(;(j > l)&&(ar[j]&k);j--);
-		if (i <= j)
-		{
-			if ( i != j)
-			{
-				swap(&ar[i],&ar[j]);
-			}
-			i++;
-			j--;
-		}
-	}
-	if(k>0)
-	{
-		if (i < r)
-			quick_sort_2(ar,i,r,k/2);
-		if (j > l)
-			quick_sort_2(ar,l,j,k/2);
-	}
+    int i = l;
+    int j = r;
+    recursion_count++;
+    //if(k==0x00)return;
+    while(i < j)
+    {
+        for(; (i < j)&&!(ar[i]&k); i++);
+        for(; (j > i)&&(ar[j]&k); j--);
+        if (i <j)
+        {
+
+            swap(&ar[i],&ar[j]);
+
+            i++;
+            j--;
+            if(i>j)
+            {
+                i--;
+                j++;
+                break;
+            }
+        }
+    }
+    if((k/2)!=0x00)
+    {
+
+
+        if(i<j)
+        {
+            if (i >l)
+                quick_sort_2(ar,l,i,k/2);
+            if (j <r)
+                quick_sort_2(ar,j,r,k/2);
+        }
+        else
+        {
+            if(ar[i]&k)
+            {
+                if (i-1 >l)
+                    quick_sort_2(ar,l,i-1,k/2);
+                if (j <r)
+                    quick_sort_2(ar,j,r,k/2);
+            }
+            else
+            {
+                if (i >l)
+                    quick_sort_2(ar,l,i,k/2);
+                if (j+1 <r)
+                    quick_sort_2(ar,j+1,r,k/2);
+            }
+        }
+    }
 
 }
 
