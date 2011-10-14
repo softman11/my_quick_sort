@@ -1,6 +1,15 @@
 #ifndef SORT_COMMON_H_INCLUDED
 #define SORT_COMMON_H_INCLUDED
 
+#include "os_version.h"
+
+#if defined WIN32_OS
+#include "win_stopwatch.h"
+#endif
+#if defined LINUX_OS
+#include "lin_stopwatch.h"
+#endif
+
 #define N 10000000
 long recursion_count;
 void swap(int*,int*);

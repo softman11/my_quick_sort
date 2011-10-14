@@ -1,19 +1,21 @@
 # depslib dependency file v1.0
-1318382228 source:f:\mydaywork\git\github\my_quick_sort\other_quicksort.c
+1318404052 source:f:\mydaywork\git\github\my_quick_sort\other_quicksort.c
 	"sort_common.h"
 	<stdlib.h>
 
-1318382228 f:\mydaywork\git\github\my_quick_sort\sort_common.h
-
-1318382574 source:f:\mydaywork\git\github\my_quick_sort\sort_common.c
-	"sort_common.h"
+1318557917 f:\mydaywork\git\github\my_quick_sort\sort_common.h
+	"os_version.h"
 	"win_stopwatch.h"
+	"lin_stopwatch.h"
+
+1318553436 source:f:\mydaywork\git\github\my_quick_sort\sort_common.c
 	<stdio.h>
 	<stdlib.h>
 	<stdarg.h>
 	<time.h>
+	"sort_common.h"
 
-1318314176 f:\mydaywork\git\github\my_quick_sort\win_stopwatch.h
+1318552862 f:\mydaywork\git\github\my_quick_sort\win_stopwatch.h
 
 1318382434 source:f:\mydaywork\git\github\my_quick_sort\win_main.c
 	<stdio.h>
@@ -22,15 +24,31 @@
 	"other_quicksort.h"
 	"sort_common.h"
 
-1318382228 f:\mydaywork\git\github\my_quick_sort\my_quicksort.h
+1318404779 f:\mydaywork\git\github\my_quick_sort\my_quicksort.h
 
-1318382228 f:\mydaywork\git\github\my_quick_sort\other_quicksort.h
+1318404052 f:\mydaywork\git\github\my_quick_sort\other_quicksort.h
 
-1318314176 source:f:\mydaywork\git\github\my_quick_sort\win_stopwatch.c
+1318553386 source:f:\mydaywork\git\github\my_quick_sort\win_stopwatch.c
 	<windows.h>
 	"win_stopwatch.h"
 
-1318382228 source:f:\mydaywork\git\github\my_quick_sort\my_quicksort.c
+1318550683 source:f:\mydaywork\git\github\my_quick_sort\my_quicksort.c
 	"my_quicksort.h"
+	"sort_common.h"
+	<stdio.h>
+
+1318557985 f:\mydaywork\git\github\my_quick_sort\os_version.h
+
+1318555306 f:\mydaywork\git\github\my_quick_sort\vs2010\vs2010\win_version.h
+
+1318315126 f:\mydaywork\git\github\my_quick_sort\lin_stopwatch.h
+	<sys/time.h>
+	<unistd.h>
+
+1318557875 source:f:\mydaywork\git\github\my_quick_sort\main.c
+	<stdio.h>
+	<stdlib.h>
+	"my_quicksort.h"
+	"other_quicksort.h"
 	"sort_common.h"
 

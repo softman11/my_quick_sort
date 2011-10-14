@@ -61,15 +61,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\my_quicksort.h" />
+    <ClInclude Include="..\..\os_version.h" />
     <ClInclude Include="..\..\other_quicksort.h" />
     <ClInclude Include="..\..\sort_common.h" />
     <ClInclude Include="..\..\win_stopwatch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\main.c" />
     <ClCompile Include="..\..\my_quicksort.c" />
     <ClCompile Include="..\..\other_quicksort.c" />
     <ClCompile Include="..\..\sort_common.c" />
-    <ClCompile Include="..\..\win_main.c" />
     <ClCompile Include="..\..\win_stopwatch.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

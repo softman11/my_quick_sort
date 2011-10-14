@@ -1,0 +1,6 @@
+#ifndef OS_VERSION_H_INCLUDED
+#define OS_VERSION_H_INCLUDED
+
+#define WIN32_OS
+
+#endif // OS_VERSION_H_INCLUDED

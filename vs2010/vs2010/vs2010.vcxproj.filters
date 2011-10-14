@@ -27,6 +27,9 @@
     <ClInclude Include="..\..\sort_common.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\os_version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\my_quicksort.c">
@@ -38,10 +41,10 @@
     <ClCompile Include="..\..\sort_common.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\win_main.c">
+    <ClCompile Include="..\..\win_stopwatch.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\win_stopwatch.c">
+    <ClCompile Include="..\..\main.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

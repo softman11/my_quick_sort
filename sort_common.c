@@ -1,9 +1,9 @@
-#include "sort_common.h"
-#include "lin_stopwatch.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <time.h>
+#include "sort_common.h"
+
 
 
 void random_fill(int low,int up,int ar_count,...)
@@ -45,6 +45,9 @@ void print_result(int* ar,double ms,long rcount,char *str)
     printf(" cost ms:%f %s recursion_count:%ld\n",ms,str,rcount);
 }
 
+
+
+
 void test_sort(int *ar,int l,int r,char * title,void (*f)(int*,int,int))
 {
 	recursion_count=0L;
@@ -62,3 +65,4 @@ void test_sort1(int *ar,int l,int r,char * title,void (*f)(int*,int,int,int))
     end_stopwatch();
     print_result(ar,get_stopwatch_ms(),recursion_count,title);
 }
+

@@ -31,10 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="..\main.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="..\my_quicksort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="..\my_quicksort.h" />
+		<Unit filename="..\os_version.h" />
 		<Unit filename="..\other_quicksort.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -43,9 +47,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="..\sort_common.h" />
-		<Unit filename="..\win_main.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="..\win_stopwatch.c">
 			<Option compilerVar="CC" />
 		</Unit>
