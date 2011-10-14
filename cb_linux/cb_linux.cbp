@@ -35,13 +35,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../lin_stopwatch.h" />
-		<Unit filename="../linux_main.c">
+		<Unit filename="../main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../my_quicksort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../my_quicksort.h" />
+		<Unit filename="../os_version.h" />
 		<Unit filename="../other_quicksort.c">
 			<Option compilerVar="CC" />
 		</Unit>
