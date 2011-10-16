@@ -1,4 +1,4 @@
-project:my_quick_sort
+﻿project:my_quick_sort
 description:make better and faster sort algorithm
 date:2011-10-06
 author:jackwong from lstc china
@@ -26,4 +26,20 @@ cb默认采用执行控制台是:xterm -T $Title -e 显示效果和中文支持�
 修改了项目结构，删除了linux和vs2010分支，统一采用master分支来适应不同的操作系统
 采用os_version.h文件里面的定义来区别操作系统类型，其他文件两个平台完全一致。
 但是每次不同的操作系统需要修改下os_version.h里面的标志。
+
+2011-10-16
+==========================
+不同平台下测试结果,排序数据范围=[0,0x7fffffff),数组大小N=10000000
+1.cb_win7(T7500+2G)
+test ok! cost ms:2267.322099 my quick_sort_0 recursion_count:32768
+test ok! cost ms:1558.236026 my quick_sort_1 recursion_count:32768
+test ok! cost ms:2063.599014 other_quick_sort_0 recursion_count:14322240
+test ok! cost ms:1750.008749 clib_quick_sort recursion_count:0
+test ok! cost ms:1472.161783 other bq_sort recursion_count:32783
+test ok! cost ms:1289.285923 my quick_sort_2 recursion_count:32783
+
+
+
+
+
 

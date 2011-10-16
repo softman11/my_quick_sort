@@ -1,7 +1,7 @@
 #ifndef OS_VERSION_H_INCLUDED
 #define OS_VERSION_H_INCLUDED
 
-//#define WIN32_OS
-#define LINUX_OS
+#define WIN32_OS
+//#define LINUX_OS
 
 #endif // OS_VERSION_H_INCLUDED
