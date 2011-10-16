@@ -193,3 +193,7 @@ void quick_sort_2(int*ar,int l,int r,int k)
 
 
 
+
+
+
+

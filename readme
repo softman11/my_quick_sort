@@ -29,7 +29,7 @@ cb默认采用执行控制台是:xterm -T $Title -e 显示效果和中文支持�
 
 2011-10-16
 ==========================
-不同平台下测试结果,排序数据范围=[0,0x7fffffff),数组大小N=10000000
+不同平台下测试结果,排序数据范围=[0,0x7fffffff),数组大小N=10000000,均采用最大优化Release版本
 1.cb_win7(T7500+2G)
 test ok! cost ms:2267.322099 my quick_sort_0 recursion_count:32768
 test ok! cost ms:1558.236026 my quick_sort_1 recursion_count:32768
@@ -37,6 +37,14 @@ test ok! cost ms:2063.599014 other_quick_sort_0 recursion_count:14322240
 test ok! cost ms:1750.008749 clib_quick_sort recursion_count:0
 test ok! cost ms:1472.161783 other bq_sort recursion_count:32783
 test ok! cost ms:1289.285923 my quick_sort_2 recursion_count:32783
+
+2.cb_ubuntu11.04(T7500+2G)
+test ok! cost ms:3089.507000 my quick_sort_0 recursion_count:6655618
+test ok! cost ms:2202.358000 my quick_sort_1 recursion_count:6654792
+test ok! cost ms:1897.288000 other_quick_sort_0 recursion_count:10462052
+test ok! cost ms:3345.365000 clib_quick_sort recursion_count:0
+test ok! cost ms:2361.159000 other bq_sort recursion_count:14381602
+test ok! cost ms:2040.208000 my quick_sort_2 recursion_count:14381602
 
 
 

@@ -19,5 +19,7 @@ void quick_sort_1(int*,int,int);
 void quick_sort_2(int*ar,int ,int,int);
 
 
+
+
 #endif // MY_QUICKSORT_H_INCLUDED
 
