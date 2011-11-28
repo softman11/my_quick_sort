@@ -96,8 +96,8 @@ public class TestThread {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		tasklist=new ArrayBlockingQueue<Task>(10,true);
-		int size=50;
-		int max=size;
+		int size=1000*10000;
+		int max=0x7fffffff;
 		int[] arr=new int[size];
 		new qsort().randFill(arr, 0, max);
 		
@@ -105,6 +105,7 @@ public class TestThread {
 		Thread t2=new Thread(new DoTask());
 		Thread t22=new Thread(new DoTask());
 		StopWatch sw=new StopWatch();
+		qsort q=new qsort();
 		sw.start();
 		AddTask(arr,0,size-1);
 		t2.start();
@@ -116,7 +117,9 @@ public class TestThread {
 		sw.stop();
 		System.out.println("cost time:"+sw.getElapsedTime());
 		t2.interrupt();
-		t22.interrupt();			
+		t22.interrupt();	
+		
+		System.out.println("cost time:"+sw.getElapsedTime());
 			if(new qsort().isRight(arr))System.out.println("sort ok");
 			System.out.println("exit");
 		
